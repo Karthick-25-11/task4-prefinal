@@ -66,15 +66,10 @@ The Terraform configuration follows a modular structure to improve readability a
 
 ```
 task4/
-├── README.md
 ├── provider.tf
-├── backend.tf
-├── versions.tf
 ├── variables.tf
 ├── terraform.tfvars
 ├── main.tf
-├── outputs.tf
-├── userdata.sh
 ├── modules/
 │   ├── vpc/
 │   │   ├── main.tf
