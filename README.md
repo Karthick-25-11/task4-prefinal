@@ -146,5 +146,3 @@ This project helped me gain hands-on experience with Terraform, AWS infrastructu
 
 ---
 
-
-Just tell me 👍
