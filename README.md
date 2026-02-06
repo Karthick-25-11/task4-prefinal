@@ -66,28 +66,37 @@ This approach ensures the EC2 instance is fully automated and does not require m
 
 The Terraform configuration follows a modular structure to improve readability and maintainability.
 
-task4/
-├── main.tf
+terraform-strapi-alb-project/
+├── README.md
+├── provider.tf
+├── backend.tf
+├── versions.tf
 ├── variables.tf
-├── outputs.tf
 ├── terraform.tfvars
-├── vpc/
-│   ├── main.tf
-│   ├── variables.tf
-│   └── outputs.tf
-├── security/
-│   ├── main.tf
-│   └── variables.tf
-├── alb/
-│   ├── main.tf
-│   └── variables.tf
-├── ec2/
-│   ├── main.tf
-│   ├── variables.tf
-│   └── userdata.sh
-├── strapi-app/
+├── main.tf
+├── outputs.tf
+├── userdata.sh
+├── modules/
+│   ├── vpc/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── security-group/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── alb/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   └── ec2/
+│       ├── main.tf
+│       ├── variables.tf
+│       └── outputs.tf
+├── docker/
 │   ├── Dockerfile
-│   └── application source files
+│   └── docker-compose.yml
+
 
 ---
 
