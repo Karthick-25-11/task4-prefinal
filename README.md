@@ -66,7 +66,7 @@ This approach ensures the EC2 instance is fully automated and does not require m
 
 The Terraform configuration follows a modular structure to improve readability and maintainability.
 
-terraform-strapi-alb-project/
+task4/
 ├── README.md
 ├── provider.tf
 ├── backend.tf
@@ -96,6 +96,7 @@ terraform-strapi-alb-project/
 ├── docker/
 │   ├── Dockerfile
 │   └── docker-compose.yml
+
 
 
 ---
