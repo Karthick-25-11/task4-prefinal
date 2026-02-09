@@ -87,9 +87,8 @@ task4/
 │       ├── main.tf
 │       ├── variables.tf
 │       └── outputs.tf
-├── docker/
+├── strapi-app/
 │   ├── Dockerfile
-│   └── docker-compose.yml
 ```
 
 ---
